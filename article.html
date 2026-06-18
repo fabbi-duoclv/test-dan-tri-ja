@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>記事 - ニュース速報24</title>
+  <meta name="description" content="記事の詳細 - ニュース速報24。" />
+  <link rel="preconnect" href="https://picsum.photos" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__meta">
+        <span id="today"></span>
+        <span>東京 28℃</span>
+      </div>
+      <div class="topbar__links">
+        <a href="#">ログイン</a>
+        <a href="#">RSS</a>
+        <a href="#">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="ニュース速報24 - トップページ">
+        <span class="brand__mark">速</span>
+        <span>ニュース速報24</span>
+        <span class="brand__tag">毎日いちばん早いニュース</span>
+      </a>
+      <form class="search" role="search" onsubmit="return false">
+        <label class="visually-hidden" for="q">検索</label>
+        <input id="q" type="search" placeholder="ニュースを検索..." />
+        <button type="submit" aria-label="検索">🔍</button>
+      </form>
+      <div class="hotline">お問い合わせ<br /><strong>03-1234-5678</strong></div>
+    </div>
+  </header>
+
+  <!-- Main nav -->
+  <nav class="main-nav" aria-label="カテゴリー">
+    <div class="container">
+      <button class="nav-toggle" aria-expanded="false" aria-label="メニューを開く">☰</button>
+      <ul data-nav>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="category.html?cat=shakai">社会</a></li>
+        <li><a href="category.html?cat=kokusai">国際</a></li>
+        <li><a href="category.html?cat=keizai">経済</a></li>
+        <li><a href="category.html?cat=supotsu">スポーツ</a></li>
+        <li><a href="category.html?cat=entame">エンタメ</a></li>
+        <li><a href="category.html?cat=tech">テクノロジー</a></li>
+        <li><a href="category.html?cat=kenko">健康</a></li>
+        <li><a href="category.html?cat=kyoiku">教育</a></li>
+        <li><a href="category.html?cat=kurashi">暮らし</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a href="index.html">トップ</a><span>›</span>
+      <a href="#" data-crumb-cat>カテゴリー</a>
+    </nav>
+
+    <div class="layout">
+
+      <!-- ===== Article ===== -->
+      <article class="article">
+        <span class="article__cat" data-article-cat>カテゴリー</span>
+        <h1 class="article__title" data-article-title>記事を読み込んでいます…</h1>
+        <p class="article__sapo" data-article-sapo></p>
+
+        <div class="article__meta">
+          <span data-article-date></span>
+          <span data-article-author></span>
+          <span data-article-views></span>
+        </div>
+
+        <div class="article__body" data-article-body>
+          <figure data-article-lead></figure>
+        </div>
+
+        <p class="author" data-article-byline></p>
+
+        <div class="share" aria-label="シェア">
+          <a href="#" aria-label="Facebookでシェア">f</a>
+          <a href="#" aria-label="Xでシェア">X</a>
+          <a href="#" aria-label="メールでシェア">@</a>
+          <a href="#" aria-label="リンクをコピー">🔗</a>
+        </div>
+
+        <div class="tags" data-article-tags></div>
+
+        <!-- Related -->
+        <div class="section-head"><h2>関連記事</h2></div>
+        <ul class="news-list" data-related></ul>
+      </article>
+
+      <!-- ===== Sidebar ===== -->
+      <aside class="sidebar" aria-label="よく読まれている・最新のニュース">
+        <div class="widget" data-tabs>
+          <div class="tabs" role="tablist" aria-label="よく読まれている / 最新">
+            <button role="tab" id="tab-read" aria-controls="panel-read" aria-selected="true">よく読まれている</button>
+            <button role="tab" id="tab-new" aria-controls="panel-new" aria-selected="false">最新</button>
+          </div>
+          <div class="widget__body">
+            <ul class="rank-list tab-panel" id="panel-read" role="tabpanel" aria-labelledby="tab-read" data-rank="read"></ul>
+            <ul class="rank-list tab-panel" id="panel-new" role="tabpanel" aria-labelledby="tab-new" data-rank="new" hidden></ul>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand__mark">速</span><span>ニュース速報24</span></a>
+          <p>速く、正確に、24時間更新。これはデモ用テンプレートで、内容と画像はすべてイメージです。</p>
+        </div>
+        <div>
+          <h4>カテゴリー</h4>
+          <ul>
+            <li><a href="category.html?cat=shakai">社会</a></li>
+            <li><a href="category.html?cat=keizai">経済</a></li>
+            <li><a href="category.html?cat=supotsu">スポーツ</a></li>
+            <li><a href="category.html?cat=tech">テクノロジー</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>私たちについて</h4>
+          <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">広告掲載</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>フォロー</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ニュース速報24 — デモ用テンプレート</span>
+        <span>ニュースサイトのレイアウトを参考にしたデザイン</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var d = new Date();
+      var days = ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"];
+      var el = document.getElementById("today");
+      if (el) el.textContent = d.toLocaleDateString("ja-JP") + "（" + days[d.getDay()] + "）";
+    })();
+  </script>
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

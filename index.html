@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ニュース速報24 - その日の最新ニュースを素早くお届け</title>
+  <meta name="description" content="ニュース速報24 - 社会、国際、経済、スポーツ、エンタメ、テクノロジー、暮らしの最新ニュースを素早く更新。" />
+  <link rel="preconnect" href="https://picsum.photos" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar__meta">
+        <span id="today"></span>
+        <span>東京 28℃</span>
+      </div>
+      <div class="topbar__links">
+        <a href="#">ログイン</a>
+        <a href="#">RSS</a>
+        <a href="#">お問い合わせ</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="ニュース速報24 - トップページ">
+        <span class="brand__mark">速</span>
+        <span>ニュース速報24</span>
+        <span class="brand__tag">毎日いちばん早いニュース</span>
+      </a>
+
+      <form class="search" role="search" onsubmit="return false">
+        <label class="visually-hidden" for="q">検索</label>
+        <input id="q" type="search" placeholder="ニュースを検索..." />
+        <button type="submit" aria-label="検索">🔍</button>
+      </form>
+
+      <div class="hotline">
+        お問い合わせ<br /><strong>03-1234-5678</strong>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main nav -->
+  <nav class="main-nav" aria-label="カテゴリー">
+    <div class="container">
+      <button class="nav-toggle" aria-expanded="false" aria-label="メニューを開く">☰</button>
+      <ul data-nav>
+        <li><a href="index.html" aria-current="page">トップ</a></li>
+        <li><a href="category.html?cat=shakai">社会</a></li>
+        <li><a href="category.html?cat=kokusai">国際</a></li>
+        <li><a href="category.html?cat=keizai">経済</a></li>
+        <li><a href="category.html?cat=supotsu">スポーツ</a></li>
+        <li><a href="category.html?cat=entame">エンタメ</a></li>
+        <li><a href="category.html?cat=tech">テクノロジー</a></li>
+        <li><a href="category.html?cat=kenko">健康</a></li>
+        <li><a href="category.html?cat=kyoiku">教育</a></li>
+        <li><a href="category.html?cat=kurashi">暮らし</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <div class="layout">
+
+      <!-- ===== Main column ===== -->
+      <div class="main-col">
+
+        <!-- Hero -->
+        <section class="hero" aria-label="注目ニュース">
+          <article class="hero__lead">
+            <a class="thumb" href="article.html?id=metro-3">
+              <img src="https://picsum.photos/seed/metro/800/450" alt="注目ニュース" width="800" height="450" loading="eager" />
+            </a>
+            <span class="tag">社会</span>
+            <h3><a href="article.html?id=metro-3">市が地下鉄3号線の建設に着工、都心の渋滞緩和に期待</a></h3>
+            <p class="sapo">全長12キロ・10駅の路線で、4年後の完成を見込む。都市インフラの転換点になると評価されている。</p>
+          </article>
+
+          <div class="hero__side">
+            <article class="mini">
+              <a class="thumb" href="article.html?id=kin-kakaku"><img src="https://picsum.photos/seed/gold/220/165" alt="" width="220" height="165" loading="lazy" /></a>
+              <h4><a href="article.html?id=kin-kakaku">国内の金価格、3営業日連続で上昇</a></h4>
+            </article>
+            <article class="mini">
+              <a class="thumb" href="article.html?id=daihyo"><img src="https://picsum.photos/seed/team/220/165" alt="" width="220" height="165" loading="lazy" /></a>
+              <h4><a href="article.html?id=daihyo">代表チーム、予選に向け26人のメンバーを発表</a></h4>
+            </article>
+            <article class="mini">
+              <a class="thumb" href="article.html?id=ev"><img src="https://picsum.photos/seed/ev/220/165" alt="" width="220" height="165" loading="lazy" /></a>
+              <h4><a href="article.html?id=ev">300万円台の都市型EVが登場</a></h4>
+            </article>
+          </div>
+        </section>
+
+        <!-- 社会 -->
+        <div class="section-head"><h2>社会</h2><a href="category.html?cat=shakai">すべて見る »</a></div>
+        <section class="card-grid" aria-label="社会ニュース">
+          <article class="card">
+            <a class="thumb" href="article.html?id=dosha"><img src="https://picsum.photos/seed/dosha/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=dosha">土砂災害の危険地域から5000世帯超を避難、梅雨入り前に</a></h4>
+            <p class="sapo">自治体は人員を動員し、住民が新たな住まいで生活を立て直せるよう支援している。</p>
+            <div class="meta">2時間前</div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="article.html?id=kotsu-bassoku"><img src="https://picsum.photos/seed/phat/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=kotsu-bassoku">交通違反の罰則強化を提案、来年初めから適用へ</a></h4>
+            <p class="sapo">新たな政令案について、広く意見募集が行われている。</p>
+            <div class="meta">3時間前</div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="article.html?id=kyushoku"><img src="https://picsum.photos/seed/bantru/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=kyushoku">山間部の学校で昼食・昼休み制度を導入、通学を支援</a></h4>
+            <p class="sapo">数千人の子どもが学校で食事と休憩の支援を受けられるようになった。</p>
+            <div class="meta">5時間前</div>
+          </article>
+        </section>
+
+        <!-- 経済 -->
+        <div class="section-head"><h2>経済</h2><a href="category.html?cat=keizai">すべて見る »</a></div>
+        <section aria-label="経済ニュース">
+          <ul class="news-list">
+            <li>
+              <a class="thumb" href="article.html?id=yushutsu"><img src="https://picsum.photos/seed/export/180/135" alt="" width="180" height="135" loading="lazy" /></a>
+              <div>
+                <h4><a href="article.html?id=yushutsu">農産物の輸出、上半期に過去最高を記録</a></h4>
+                <div class="meta">経済 ・ 1時間前</div>
+              </div>
+            </li>
+            <li>
+              <a class="thumb" href="article.html?id=kinri"><img src="https://picsum.photos/seed/bank/180/135" alt="" width="180" height="135" loading="lazy" /></a>
+              <div>
+                <h4><a href="article.html?id=kinri">中央銀行、政策金利を据え置き</a></h4>
+                <div class="meta">経済 ・ 2時間前</div>
+              </div>
+            </li>
+            <li>
+              <a class="thumb" href="article.html?id=fudosan"><img src="https://picsum.photos/seed/realestate/180/135" alt="" width="180" height="135" loading="lazy" /></a>
+              <div>
+                <h4><a href="article.html?id=fudosan">関西の不動産市場に回復の兆し</a></h4>
+                <div class="meta">経済 ・ 4時間前</div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- スポーツ -->
+        <div class="section-head"><h2>スポーツ</h2><a href="category.html?cat=supotsu">すべて見る »</a></div>
+        <section class="card-grid" aria-label="スポーツニュース">
+          <article class="card">
+            <a class="thumb" href="article.html?id=shobu"><img src="https://picsum.photos/seed/match/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=shobu">市民クラブ、アディショナルタイムの劇的弾で勝利</a></h4>
+            <div class="meta">30分前</div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="article.html?id=tennis"><img src="https://picsum.photos/seed/tennis/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=tennis">若手テニス選手、国際大会で快挙</a></h4>
+            <div class="meta">1時間前</div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="article.html?id=daihyo"><img src="https://picsum.photos/seed/team/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=daihyo">代表チーム、予選に向け26人のメンバーを発表</a></h4>
+            <div class="meta">2時間前</div>
+          </article>
+        </section>
+
+        <!-- テクノロジー & 暮らし -->
+        <div class="section-head"><h2>テクノロジー＆暮らし</h2><a href="category.html?cat=tech">すべて見る »</a></div>
+        <section class="card-grid" aria-label="テクノロジーと暮らしのニュース">
+          <article class="card">
+            <a class="thumb" href="article.html?id=ev"><img src="https://picsum.photos/seed/ev/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=ev">300万円台の都市型EVが登場</a></h4>
+            <p class="sapo">小回りの利く車体と競争力のある価格で、グリーンな移動の流れを後押しすると期待される。</p>
+            <div class="meta">テクノロジー ・ 1時間前</div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="article.html?id=ai-iryo"><img src="https://picsum.photos/seed/aihealth/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=ai-iryo">病院が人工知能を画像診断の支援に導入</a></h4>
+            <p class="sapo">AIシステムが画像上の異常の早期発見を助け、診断の精度を高めている。</p>
+            <div class="meta">テクノロジー ・ 3時間前</div>
+          </article>
+          <article class="card">
+            <a class="thumb" href="article.html?id=ryoko"><img src="https://picsum.photos/seed/travel/400/250" alt="" width="400" height="250" loading="lazy" /></a>
+            <h4><a href="article.html?id=ryoko">夏の旅行が活況、二桁成長の観光地も</a></h4>
+            <p class="sapo">国内外の旅行者がともに大きく増え、各地が繁忙期に向けて新たな企画を打ち出している。</p>
+            <div class="meta">暮らし ・ 5時間前</div>
+          </article>
+        </section>
+
+      </div>
+
+      <!-- ===== Sidebar ===== -->
+      <aside class="sidebar" aria-label="よく読まれている・最新のニュース">
+
+        <div class="widget" data-tabs>
+          <div class="tabs" role="tablist" aria-label="よく読まれている / 最新">
+            <button role="tab" id="tab-read" aria-controls="panel-read" aria-selected="true">よく読まれている</button>
+            <button role="tab" id="tab-new" aria-controls="panel-new" aria-selected="false">最新</button>
+          </div>
+          <div class="widget__body">
+            <ul class="rank-list tab-panel" id="panel-read" role="tabpanel" aria-labelledby="tab-read" data-rank="read"></ul>
+            <ul class="rank-list tab-panel" id="panel-new" role="tabpanel" aria-labelledby="tab-new" data-rank="new" hidden></ul>
+          </div>
+        </div>
+
+        <div class="widget">
+          <div class="widget__head">ピックアップ</div>
+          <div class="widget__body">
+            <article class="mini" style="grid-template-columns: 100px 1fr;">
+              <a class="thumb" href="article.html?id=ai-iryo"><img src="https://picsum.photos/seed/aihealth/200/150" alt="" width="200" height="150" loading="lazy" /></a>
+              <h4><a href="article.html?id=ai-iryo">特集：医療分野における人工知能</a></h4>
+            </article>
+            <article class="mini" style="grid-template-columns: 100px 1fr; margin-top: 14px;">
+              <a class="thumb" href="article.html?id=ryoko"><img src="https://picsum.photos/seed/travel/200/150" alt="" width="200" height="150" loading="lazy" /></a>
+              <h4><a href="article.html?id=ryoko">視点：夏の旅行とインフラの課題</a></h4>
+            </article>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="index.html"><span class="brand__mark">速</span><span>ニュース速報24</span></a>
+          <p>速く、正確に、24時間更新。これはデモ用テンプレートで、内容と画像はすべてイメージです。</p>
+        </div>
+        <div>
+          <h4>カテゴリー</h4>
+          <ul>
+            <li><a href="category.html?cat=shakai">社会</a></li>
+            <li><a href="category.html?cat=keizai">経済</a></li>
+            <li><a href="category.html?cat=supotsu">スポーツ</a></li>
+            <li><a href="category.html?cat=tech">テクノロジー</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>私たちについて</h4>
+          <ul>
+            <li><a href="#">会社概要</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+            <li><a href="#">広告掲載</a></li>
+            <li><a href="#">採用情報</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>フォロー</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">RSS</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> ニュース速報24 — デモ用テンプレート</span>
+        <span>ニュースサイトのレイアウトを参考にしたデザイン</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // トップバーの日本語の日付
+    (function () {
+      var d = new Date();
+      var days = ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日"];
+      var el = document.getElementById("today");
+      if (el) el.textContent = d.toLocaleDateString("ja-JP") + "（" + days[d.getDay()] + "）";
+    })();
+  </script>
+  <script src="js/articles.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
